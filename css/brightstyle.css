@@ -1,0 +1,460 @@
+/*
+Author: Laura Chipman
+Student Number: c0590808
+File Name: brightstyle.css
+TERM PROJECT
+*/
+
+/*CSS Reset*/
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, th, table, caption, td, aside, figure, figcaption {
+    margin:0;
+    padding:0;
+    border:0;
+ }
+
+ *{ 
+    box-sizing: border-box;
+ }
+
+/* Style rules for body and images */
+body {
+    background-color: #5291fe;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    max-width: 22%;
+    display:grid;
+}
+
+.hero {
+    width: 100%;
+    border: 5px solid #170064;
+    overflow: hidden;
+ }
+ 
+.offer {
+    max-width: 45%;
+    border-radius: 60px;
+    width: 50%;
+    border: 5px solid #170064;
+}
+
+.floorlamp {
+    width: 30%;
+    border-radius: 40px;
+    border: 5px solid #170064;
+    float: left;
+    margin-left: 15%;
+}
+
+.png {
+    max-width: 10%;
+}
+
+ /* Style rule for header */
+header {
+        width: 100%;
+        height:fit-content;  
+        background-color: #5291fe;
+        top: 0;
+}
+
+h1 {
+    font-family: "GFS Didot", serif;
+    text-align: center;
+    margin-top: 20px;
+    color: #170064;
+    text-decoration: underline;
+    margin-bottom: 2%;
+    font-weight: bolder;
+}
+
+h2 {
+    font-family: "GFS Didot", serif;
+    text-align: center;
+    margin-top: 20px;
+    color: #170064;
+    margin-bottom: 2%;
+}
+
+h3 {
+    font-family: "GFS Didot", serif;
+    text-align: center;
+    margin-top: 20px;
+    color: #170064;
+    margin-bottom: 2%;
+}
+
+
+
+
+ /* Style for rules for navigation area */ 
+ .nav {
+    background-color: #5291fe;
+    color: #ffffffb9;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    font-family: "GFS Didot", serif;
+}
+
+.nav ul {
+    list-style: none;
+    display:contents;    
+}
+
+.nav ul.row {
+    margin: 0 0px; 
+}
+
+.nav li {
+    margin-right: 20px; 
+    list-style-type:none;
+    font-family: "GFS Didot", serif;
+    font-size: 1.5em;}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    font-weight: bolder;
+    color:#170064;
+    background-color:#5291fe;
+}
+
+
+
+
+ /* Style rules for main content */ 
+main {
+    
+    background-color: #5291fe;
+    font-size: 1.25em;
+    font-family: "GFS Didot", serif;
+    margin: 10%;
+    margin-top: 2%;
+}
+
+article {
+    margin-top: 20px;
+}
+
+#mission {
+    font-weight: bold;
+}
+
+main p {
+    padding: 1%;
+    text-align: center;
+}
+
+ body {
+    font-family: "GFS Didot", serif;
+    font-size: 16px;
+    line-height: 1.6;
+    align-items: center;
+}
+
+.urgent{
+    font-size: 1.75em;
+    font-weight: bold;
+    color: #170064;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+}
+
+.tripod {
+    font-weight: bold;
+    color: #170064;
+    font-style: italic;
+}
+
+#special {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+
+.map{
+    border: 2px solid #000;
+    width: 95%;
+    height: 50%;
+}
+
+#lovebright {
+    font-family: "GFS Didot", serif;
+    align-content:center;
+    align-items: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+#contact{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width:100%;
+}
+
+.homecontact{
+    text-decoration: none;
+    font-weight: light;
+    font-size: xx-large;
+    color: #ccc;
+}
+
+aside {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #170064;
+    color:#5291fe;
+    box-shadow: 5px 5px 8px #000;
+    border-radius: 0 15px; 
+}
+
+aside h2 {
+    color: #cce;
+    margin: 0;
+}
+
+aside p {
+    margin: 0;
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+
+    
+}
+
+figcaption {
+    text-align: center;
+    font-weight:bold;
+    margin: 10px;
+    
+}
+
+.team {
+    width: 80%;
+    border-radius: 40px;
+    border: 5px solid #170064;
+    box-shadow: 5px 5px 8px #000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style rules for form elements */
+form {
+    display:grid;
+    width: 90%;
+    justify-content: center;
+}
+
+fieldset, input, select, textarea {
+    margin-bottom: auto;
+    align-items: center;
+   
+}
+
+fieldset {
+    border: 2px solid #170064;
+    box-shadow: 3px 3px 3px #170064;
+    border-radius: 40px;
+}
+
+.form-grid {
+    display:grid;
+    grid-template-columns: auto / auto auto; 
+    grid-gap: 20px;
+}
+
+fieldset legend {
+    font-weight: bold; 
+    font-size: 1.25em;
+    text-align: center;
+    color: #170064;
+}
+
+label {
+    display:flex;
+    padding-top: 3%;
+    justify-content: center;
+}
+
+input *{
+    width: 95%;
+    box-sizing: border-box; 
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+textarea {
+    width:100%;
+    display: flex;
+    border-radius: 10px;
+}
+
+#how-heard {
+    width: 100%;
+    height:max-content;
+}
+
+.asterik {
+    color: red;
+}
+
+.btn {
+    margin: 10px auto;
+    border: 3px solid #ccc;
+    display: block;
+    padding: 2%;
+    background-color: #170064;
+    font-size: 1em;
+    border-radius: 10px; 
+    color:#ccc;
+}
+
+#reset {
+    size: 80%;
+}
+
+#best-date {
+    display: flex;
+    align-items: center;
+}
+
+/*Style Rules for Lists*/
+ul {
+    list-style-type: none;
+}
+
+main li {
+    padding: 2%;
+    text-align: center;
+}
+
+/*Style Rules foe Tables*/
+table {
+    border-collapse: collapse;
+    border: 4px solid #170064;
+    justify-content: center;
+    display: block;
+    padding: 2%;
+}
+
+caption {
+    font-size: 1.7em; 
+    font-weight: bold; 
+    padding: 1% ;
+    color: #170064;
+}
+
+th, td {
+    border-collapse: collapse;
+    padding: 1%;
+    border: 2px solid #170064;
+    text-align: center;
+}
+
+th {
+    background-color: #170064;
+    color: #fff;
+    width: 22%;
+}
+
+tr:nth-child(odd) { 
+    background-color: #c5d281; 
+}
+
+tr:hover {
+    background-color: rgb(109, 90, 231);
+}
+
+.frame {
+    opacity: 0.9;
+}
+
+.frame:hover { 
+    opacity: 1;
+    box-shadow: 8px 8px 10px #170064;
+}
+
+
+/* Apply styles to the main grid container */
+.grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto;
+
+}
+
+#lastarticle {
+    align-items: center; 
+}
+ 
+
+/* Style for the section element */
+section {
+    padding: 20px;
+    margin: 50px;
+    box-shadow: 8px 8px 8px #170064;
+    border-radius: 45px;
+        border:2px solid #170064;
+    }
+
+
+/* Style for the quote element */
+.quote {
+    font-style: italic;
+}
+
+/* Emphasized quote class */
+.emphasized {
+    
+    color: #ccc; 
+}
+
+video {
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    border: 3px solid #170064;
+    padding: 5%;
+    margin: 3%;
+}
+
+/* Style rules for footer content */
+footer {
+    margin-bottom: 25px;
+    margin-top: 0px;
+    align-items: center;
+}
+
+footer p{
+    font-size: 0.75em;
+    text-align:center;
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+}
+
+footer p a{
+    color: #fff;
+    text-decoration: none;
+}
