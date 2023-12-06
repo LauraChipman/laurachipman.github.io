@@ -1,0 +1,117 @@
+/*
+Author: Laura Chipman
+Student Number: c0590808
+File Name: media.css
+TERM PROJECT
+*/
+
+/*reset*/
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, th, table, caption, td, aside, figure, figcaption {
+    margin:0;
+    padding:0;
+    border:0;
+ }
+
+ *{ 
+    box-sizing: border-box;
+ }
+
+/* Style rules for body and images */
+body {
+    background-color: #5291fe;
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .logo {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero {
+        border: 3px solid #170064;
+    }
+
+    .offer {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .floorlamp {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav li {
+        margin: 0;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    main {
+        margin: 5%;
+    }
+
+    #lovebright {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+    }
+
+   .frame {
+        box-shadow: none;
+    }
+
+    #lastarticle {
+        text-align: center;
+    }
+
+    section {
+        margin: 20px;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    p {
+        font-size: .8em;
+    }
+
+    #training-table {
+        width:fit-content;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .logo {
+        max-width: 100%;
+    }
+
+    .nav ul {
+        padding: 0;
+    }
+}

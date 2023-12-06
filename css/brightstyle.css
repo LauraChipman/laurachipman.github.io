@@ -5,7 +5,7 @@ File Name: brightstyle.css
 TERM PROJECT
 */
 
-/*CSS Reset*/
+/*reset*/
 body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, th, table, caption, td, aside, figure, figcaption {
     margin:0;
     padding:0;
@@ -19,6 +19,12 @@ body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, 
 /* Style rules for body and images */
 body {
     background-color: #5291fe;
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    height: 100%;
 }
 
 img {
@@ -66,10 +72,9 @@ header {
 h1 {
     font-family: "GFS Didot", serif;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5px;
     color: #170064;
-    text-decoration: underline;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     font-weight: bolder;
 }
 
@@ -94,25 +99,22 @@ h3 {
 
  /* Style for rules for navigation area */ 
  .nav {
-    background-color: #5291fe;
     color: #ffffffb9;
-    padding-bottom: 2%;
-    display: flex;
+    padding-bottom: 1%;
+    display:flex;
     justify-content:center;
-    width: 100%;
     font-family: "GFS Didot", serif;
 }
 
 .nav ul {
     list-style: none;
-    display:contents;    
-}
-
-.nav ul.row {
-    margin: 0 0px; 
+    display:contents;  
+    margin: 0 0px;
+    text-align:center;    
 }
 
 .nav li {
+    
     margin-right: 20px; 
     list-style-type:none;
     font-family: "GFS Didot", serif;
@@ -135,16 +137,17 @@ h3 {
 
  /* Style rules for main content */ 
 main {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #5291fe;
     font-size: 1.25em;
     font-family: "GFS Didot", serif;
-    margin: 10%;
-    margin-top: 2%;
 }
 
 article {
-    margin-top: 20px;
+    margin: 0;
 }
 
 #mission {
@@ -152,13 +155,12 @@ article {
 }
 
 main p {
-    padding: 1%;
     text-align: center;
 }
 
  body {
     font-family: "GFS Didot", serif;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 1.6;
     align-items: center;
 }
@@ -235,16 +237,17 @@ aside p {
 
 figure {
     margin: 20px 0;
-    text-align: center;
+    text-align: center;    
+}
 
-    
+.home-menu {
+    margin: 0;
+    padding: 0;
 }
 
 figcaption {
     text-align: center;
     font-weight:bold;
-    margin: 10px;
-    
 }
 
 .team {
@@ -320,23 +323,21 @@ textarea {
 }
 
 .btn {
-    margin: 10px auto;
     border: 3px solid #ccc;
+    font-family: "GFS Didot", serif;
     display: block;
-    padding: 2%;
+    padding: 1%;
     background-color: #170064;
     font-size: 1em;
     border-radius: 10px; 
     color:#ccc;
 }
 
-#reset {
-    size: 80%;
-}
+
 
 #best-date {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 /*Style Rules for Lists*/
@@ -399,8 +400,16 @@ tr:hover {
 /* Apply styles to the main grid container */
 .grid {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 5px;
     grid-template-columns: auto auto;
+
+}
+
+.grid a:hover {
+        text-decoration: none;
+        font-weight: lighter;
+        color:#170064;
+        background-color:#5291fe;
 
 }
 
@@ -441,20 +450,105 @@ video {
 
 /* Style rules for footer content */
 footer {
-    margin-bottom: 25px;
-    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     align-items: center;
 }
 
 footer p{
-    font-size: 0.75em;
+    font-size: 0.8em;
     text-align:center;
-    color: #fff;
+    color: #ffffffc0;
     padding: 0px;
     margin: 0px;
 }
 
 footer p a{
     color: #fff;
-    text-decoration: none;
+    text-decoration: underline;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .logo {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero {
+        border: 3px solid #170064;
+    }
+
+    .offer {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .floorlamp {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav li {
+        margin: 0;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    main {
+        margin: 5%;
+    }
+
+    #lovebright {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+    }
+
+   .frame {
+        box-shadow: none;
+    }
+
+    #lastarticle {
+        text-align: center;
+    }
+
+    section {
+        margin: 20px;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    p {
+        font-size: .8em;
+    }
+
+    #training-table {
+        width:fit-content;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .logo {
+        max-width: 100%;
+    }
+
+    .nav ul {
+        padding: 0;
+    }
 }
